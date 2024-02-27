@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body
+    class="font-main font-medium text-[1rem] min-h-screen text-veryDarkBlue md:bg-veryLightGrayishBlue md:flex md:items-center md:justify-center"
+  >
+    <!-- Container -->
+    <div class="container p-4 mx-auto">
+      <!-- Notifications Board -->
+      <div
+        class="bg-white mx-auto md:max-w-[720px] md:px-8 py-6 md:rounded-xl md:shadow-md"
+      >
+        <!-- Header of Board -->
+        <header class="flex items-center justify-between">
+          <div class="space-x-2 flex items-center">
+            <h1 class="font-extrabold text-xl md:text-2xl">Notifications</h1>
+            <!-- Box -->
+            <p
+              class="notification-num px-3 bg-blue text-white font-extrabold rounded-md"
+            >
+              3
+            </p>
+          </div>
+          <div>
+            <button
+              class="read-all-btn text-sm text-darkGrayishBlue md:text-base hover:text-blue transition"
+            >
+              Mark all as read
+            </button>
+          </div>
+        </header>
+        <!-- Post Section -->
+        <div
+          class="flex flex-col space-y-3 mt-5 text-sm md:text-base md:mt-8 md:space-y-2"
+        >
+          <!-- Post 1 -->
+          <div
+            class="unreaded-post cursor-pointer bg-veryLightGrayishBlue p-4 flex items-center space-x-4 rounded-md"
+          >
+            <img
+              class="self-start"
+              src="./assets/images/avatar-mark-webber.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Mark Webber</span
+                >
+                reacted to your recent post
+                <span
+                  class="font-extrabold hover:text-blue transition hover:cursor-pointer"
+                  >My first tournament today!</span
+                >
+                <span
+                  class="dot ml-1 w-2 h-2 bg-red rounded-full inline-block"
+                ></span>
+              </p>
+              <p class="text-grayishBlue">1m ago</p>
+            </div>
+          </div>
+          <!-- Post 2 -->
+          <div
+            class="unreaded-post cursor-pointer bg-veryLightGrayishBlue p-4 flex items-center space-x-4 rounded-md"
+          >
+            <img
+              class="self-start"
+              src="./assets/images/avatar-angela-gray.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Angela Gray</span
+                >
+                followed you
+                <span
+                  class="dot ml-1 w-2 h-2 bg-red rounded-full inline-block"
+                ></span>
+              </p>
+              <p class="text-grayishBlue">5m ago</p>
+            </div>
+          </div>
+          <!-- Post 3 -->
+          <div
+            class="unreaded-post cursor-pointer bg-veryLightGrayishBlue p-4 flex items-center space-x-4 rounded-md"
+          >
+            <img
+              class="self-start"
+              src="./assets/images/avatar-jacob-thompson.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Jacob Thompson</span
+                >
+                has joined your group
+                <span
+                  class="text-blue font-extrabold hover:text-blue transition hover:cursor-pointer"
+                  >Chess Club</span
+                >
+                <span
+                  class="dot ml-1 w-2 h-2 bg-red rounded-full inline-block"
+                ></span>
+              </p>
+              <p class="mt-1 text-grayishBlue">1day ago</p>
+            </div>
+          </div>
+          <!-- Post 4 -->
+          <div class="p-4 flex items-center space-x-4 rounded-md">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              class="self-start"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <div>
+                <p>
+                  <span
+                    class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                    >Rizky Hasanuddin</span
+                  >
+                  send you a private message
+                </p>
+                <p class="mt-1 text-grayishBlue">5day ago</p>
+              </div>
+              <div
+                class="p-4 border-[1px] border-solid border-lightGrayishBlue2 mt-3 rounded-md hover:bg-lightGrayishBlue2 hover:cursor-pointer transition"
+              >
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Post 5 -->
+          <div
+            class="p-4 flex items-center space-x-4 rounded-md md:justify-between"
+          >
+            <img
+              class="self-start"
+              src="./assets/images/avatar-kimberly-smith.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue md:pr-[10.5rem]">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Kimberly Smith</span
+                >
+                commented of your picture
+              </p>
+              <p class="mt-1 text-grayishBlue">1week ago</p>
+            </div>
+            <img src="./assets/images/image-chess.webp" class="self-start" />
+          </div>
+          <!-- Post 6 -->
+          <div class="p-4 flex items-center space-x-4 rounded-md">
+            <img
+              class="self-start"
+              src="./assets/images/avatar-nathan-peterson.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Nathan Peterson</span
+                >
+                reacted to your recent post
+                <span
+                  class="font-extrabold hover:text-blue transition hover:cursor-pointer"
+                  >5 end-game strategies to increase your win rate</span
+                >
+              </p>
+              <p class="text-grayishBlue">2m ago</p>
+            </div>
+          </div>
+          <!-- Post 7 -->
+          <div class="p-4 flex items-center space-x-4 rounded-md">
+            <img
+              class="self-start"
+              src="./assets/images/avatar-anna-kim.webp"
+            />
+            <!-- Post Info -->
+            <div class="text-darkGrayishBlue">
+              <p>
+                <span
+                  class="font-extrabold text-veryDarkBlue hover:text-blue transition hover:cursor-pointer"
+                  >Anna Kim</span
+                >
+                left the group
+                <span
+                  class="font-extrabold text-blue hover:text-veryDarkBlue transition hover:cursor-pointer"
+                  >Chess Club</span
+                >
+              </p>
+              <p class="text-grayishBlue">2week ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
